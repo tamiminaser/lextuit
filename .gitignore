@@ -1,2 +1,3 @@
 .idea
 frontend/.gradle
+backend/.env
