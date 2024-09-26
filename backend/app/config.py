@@ -1,7 +1,7 @@
 import os
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgresql://username:password@localhost/yourdatabase')
+    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'mysql://scott:tiger@localhost/foo')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
