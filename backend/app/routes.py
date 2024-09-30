@@ -20,7 +20,8 @@ def interact_and_get_next_video():
     next_video_key = "videos/next_video.mp4"
     
     # Generate a pre-signed URL for the next video from S3
-    video_url = generate_presigned_url(next_video_key)
+    #video_url = generate_presigned_url(next_video_key)
+    video_url = f"s3://dummy/{next_video_key}"
     
     if video_url:
         return jsonify({"message": "Interaction saved", "next_video_url": video_url}), 200
